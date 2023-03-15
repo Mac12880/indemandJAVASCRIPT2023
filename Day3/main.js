@@ -69,13 +69,18 @@
 
 // console.log(car.carType);
 
-const student = {
+// const student = {
 
-  Name: "Juan",
+//   Name: "Juan",
 
-  age: 18,
+//   age: 18,
 
-  year: "4th",
-};
+//   year: "4th",
+// };
 
-console.log(`${student.Name} is ${student.age} years old and currently a ${student.year} year student.`);
+// console.log(`${student.Name} is ${student.age} years old and currently a ${student.year} year student.`);
+
+const cycleArr = ["Eat", "Code", "Sleep", "Repeat"];
+
+let removeElem = cycleArr.pop();
+console.log(cycleArr);
