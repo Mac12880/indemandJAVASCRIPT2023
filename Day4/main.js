@@ -15,15 +15,15 @@
 //     }
 
 //WhileLoopA
-let num = 0
-while(num < 10){
-console.log(num)
-num++;
-}
+// let num = 0
+// while(num < 10){
+// console.log(num)
+// num++;
+// }
 
 //WhileLoopB
-// let num = 0;
-// while (num < 10) {
-// console.log(num);
-// num+=2;
-// }
+let num = 0;
+while (num < 10) {
+console.log(num);
+num+=2;
+}
