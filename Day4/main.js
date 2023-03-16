@@ -4,7 +4,12 @@
 //     }
 
 //B
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9];
-for(let x = 0; x < nums.length;x++){
-console.log(nums[x])
-}
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 9];
+// for(let x = 0; x < nums.length;x++){
+// console.log(nums[x])
+// }
+
+//C
+for(let i = 20; i>= 11;i--){
+    console.log(i)
+    }
