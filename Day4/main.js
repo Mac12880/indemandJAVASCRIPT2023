@@ -36,17 +36,34 @@
 //     let myname = myFunc(prompt("Enter Name: "));
 
 //FunctionB
-function celsiusToFahrenheit(celsius) {
-  let fahrenheit = (celsius * 9/5) + 32;
-  return fahrenheit;
-}
+// function celsiusToFahrenheit(celsius) {
+//   let fahrenheit = (celsius * 9/5) + 32;
+//   return fahrenheit;
+// }
 
-let celsius = celsiusToFahrenheit(prompt("Enter Celsius: "));
-let fahrenheit = celsiusToFahrenheit(celsius);
+// let celsius = celsiusToFahrenheit(prompt("Enter Celsius: "));
+// let fahrenheit = celsiusToFahrenheit(celsius);
 
-console.log(celsius + "°C is " + fahrenheit + "°F");
+// console.log(celsius + "°C is " + fahrenheit + "°F");
 
 //FunctionC
+function calculateCircle(radius) {
+    let perimeter = 2 * Math.PI * radius;
+    let area = Math.PI * radius * radius;
+    return [perimeter, area];
+  }
+  
+  let radius = prompt("Enter the radius of the circle:");
+  
+  if (radius === null || radius === "") {
+    console.log("You did not enter a valid radius.");
+  } else {
+    radius = parseFloat(radius);
+    let results = calculateCircle(radius);
+    console.log("Radius: " + radius);
+    console.log("Perimeter: " + results[0]);
+    console.log("Area: " + results[1]);
+  }
 
 //FunctionD
 
