@@ -47,24 +47,63 @@
 // console.log(celsius + "°C is " + fahrenheit + "°F");
 
 //FunctionC
-function calculateCircle(radius) {
-    let perimeter = 2 * Math.PI * radius;
-    let area = Math.PI * radius * radius;
-    return [perimeter, area];
-  }
+// function calculateCircle(radius) {
+//     let perimeter = 2 * Math.PI * radius;
+//     let area = Math.PI * radius * radius;
+//     return [perimeter, area];
+//   }
   
-  let radius = prompt("Enter the radius of the circle:");
+//   let radius = prompt("Enter the radius of the circle:");
   
-  if (radius === null || radius === "") {
-    console.log("You did not enter a valid radius.");
-  } else {
-    radius = parseFloat(radius);
-    let results = calculateCircle(radius);
-    console.log("Radius: " + radius);
-    console.log("Perimeter: " + results[0]);
-    console.log("Area: " + results[1]);
-  }
+//   if (radius === null || radius === "") {
+//     console.log("You did not enter a valid radius.");
+//   } else {
+//     radius = parseFloat(radius);
+//     let results = calculateCircle(radius);
+//     console.log("Radius: " + radius);
+//     console.log("Perimeter: " + results[0]);
+//     console.log("Area: " + results[1]);
+//   }
 
 //FunctionD
-
+function generateRNumber(start, end) {
+    let random = Math.floor(Math.random() * (end - start + 1)) + start;
+    return random;
+  }
+  
+  let start = prompt("Enter the start of the range:");
+  let end = prompt("Enter the end of the range:");
+  
+  if (start === null || end === null || start === "" || end === "") {
+    console.log("You did not enter a valid range.");
+  } else {
+    start = parseInt(start);
+    end = parseInt(end);
+    }
+    if (isNaN(start) || isNaN(end)) {
+      console.log("You did not enter valid numbers.");
+    } else {
+      let random = generateRandomNumber(start, end);
+      console.log("Random number between " + start + " and " + end + ": " + random);
+    }
+      function generateRandomNumber(start, end) {
+    let random = Math.floor(Math.random() * (end - start + 1)) + start;
+    return random;
+  }
+  
+  let start = prompt("Enter the start of the range:");
+  let end = prompt("Enter the end of the range:");
+  
+  if (start === null || end === null || start === "" || end === "") {
+    console.log("You did not enter a valid range.");
+  } else {
+    start = parseInt(start);
+    end = parseInt(end);
+    if (isNaN(start) || isNaN(end)) {
+      console.log("You did not enter valid numbers.");
+    } else {
+      let random = generateRNumber(start, end);
+      console.log("Random number between " + start + " and " + end + ": " + random);
+    }
+  }
 //FunctionE
