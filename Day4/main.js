@@ -22,8 +22,32 @@
 // }
 
 //WhileLoopB
-let num = 0;
-while (num < 10) {
-console.log(num);
-num+=2;
+// let num = 0;
+// while (num < 10) {
+// console.log(num);
+// num+=2;
+// }
+
+//FunctionA
+// function myFunc(name){
+//     console.log(name);
+//     }
+    
+//     let myname = myFunc(prompt("Enter Name: "));
+
+//FunctionB
+function celsiusToFahrenheit(celsius) {
+  let fahrenheit = (celsius * 9/5) + 32;
+  return fahrenheit;
 }
+
+let celsius = celsiusToFahrenheit(prompt("Enter Celsius: "));
+let fahrenheit = celsiusToFahrenheit(celsius);
+
+console.log(celsius + "°C is " + fahrenheit + "°F");
+
+//FunctionC
+
+//FunctionD
+
+//FunctionE
