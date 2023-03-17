@@ -13,15 +13,31 @@
 // circle.perimeter(3);
 
 //JSFunction1
-const square = {
-  area: function(side){
-    return side*side;
-  },
-  perimeter: function(side){
-    return side+side+side+side
+// const square = {
+//   area: function(side){
+//     return side*side;
+//   },
+//   perimeter: function(side){
+//     return side+side+side+side
+//   }
+// }
+
+// let size = Number(prompt("Enter Size"))
+// console.log(`Area = ${square.area(size)}`);
+// console.log(`Perimeter = ${square.perimeter(size)}`);
+
+//JSFunction2
+const scoring = {
+  player: "Lebron James",
+  score: 0,
+  madeTheShot: function(){
+    scoring.score += 1;
+    return `Lebron just made the shot`;
   }
 }
-
-let size = Number(prompt("Enter Size"))
-console.log(`Area = ${square.area(size)}`);
-console.log(`Perimeter = ${square.perimeter(size)}`);
+console.log(scoring.player);
+console.log(scoring.madeTheShot());
+console.log(scoring.score);
+console.log(scoring.madeTheShot());
+console.log(scoring.madeTheShot());
+console.log(scoring.score);
