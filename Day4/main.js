@@ -47,23 +47,23 @@
 // console.log(celsius + "°C is " + fahrenheit + "°F");
 
 //FunctionC
-// function calculateCircle(radius) {
-//     let perimeter = 2 * Math.PI * radius;
-//     let area = Math.PI * radius * radius;
-//     return [perimeter, area];
-//   }
+function calculateCircle(radius) {
+    let perimeter = 2 * Math.PI * radius;
+    let area = Math.PI * radius * radius;
+    return [perimeter, area];
+  }
   
-//   let radius = prompt("Enter the radius of the circle:");
+  let radius = prompt("Enter the radius of the circle:");
   
-//   if (radius === null || radius === "") {
-//     console.log("You did not enter a valid radius.");
-//   } else {
-//     radius = parseFloat(radius);
-//     let results = calculateCircle(radius);
-//     console.log("Radius: " + radius);
-//     console.log("Perimeter: " + results[0]);
-//     console.log("Area: " + results[1]);
-//   }
+  if (radius === null || radius === "") {
+    console.log("You did not enter a valid radius.");
+  } else {
+    radius = parseFloat(radius);
+    let results = calculateCircle(radius);
+    console.log("Radius: " + radius);
+    console.log("Perimeter: " + results[0]);
+    console.log("Area: " + results[1]);
+  }
 
 //FunctionD wrong
 // function generateRNumber(start, end) {
