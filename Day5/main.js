@@ -27,12 +27,28 @@
 // console.log(`Perimeter = ${square.perimeter(size)}`);
 
 //JSFunction2
+// const scoring = {
+//   player: "Lebron James",
+//   score: 0,
+//   madeTheShot: function(){
+//     scoring.score += 1;
+//     return `Lebron just made the shot`;
+//   }
+// }
+// console.log(scoring.player);
+// console.log(scoring.madeTheShot());
+// console.log(scoring.score);
+// console.log(scoring.madeTheShot());
+// console.log(scoring.madeTheShot());
+// console.log(scoring.score);
+
+// This
 const scoring = {
   player: "Lebron James",
   score: 0,
   madeTheShot: function(){
     scoring.score += 1;
-    return `Lebron just made the shot`;
+    return this.player + ` made the shot (` + this.score + ' total point/s)';
   }
 }
 console.log(scoring.player);
