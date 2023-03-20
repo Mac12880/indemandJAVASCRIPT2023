@@ -125,7 +125,16 @@
 // console.log(arrAverage(arr2));
 
 //JS ForEach #1
-const array = ['Person1', 'Person2', 'Person3'];
-array.forEach((arr) => {
-console.log(arr);
+// const array = ['Person1', 'Person2', 'Person3'];
+// array.forEach((arr) => {
+// console.log(arr);
+// });
+
+//JS ForEach #2
+let arr = ['element1', 'element2', 'element3'];
+let copyArr = [];
+arr.forEach((array) => {
+  let shift = arr.shift();
+  let push = copyArr.push(shift);
 });
+console.log(copyArr);
