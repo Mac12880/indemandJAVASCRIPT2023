@@ -54,15 +54,20 @@
 // const isEven = num => num % 2 === 0; // One-liner with Implicit Return
 
 // Set Timeout
-setTimeout(() => {
-  console.log("Hello!");
-  setTimeout(() => {
-    console.log("Bye!");
-  }, 3000);
-}, 3000);
+// setTimeout(() => {
+//   console.log("Hello!");
+//   setTimeout(() => {
+//     console.log("Bye!");
+//   }, 3000);
+// }, 3000);
 
 // Set Interval
-
+const id = setInterval(() => {
+    console.log(Math.random());
+  }, 1000);
+setTimeout(() => {
+  clearTimeout(id)
+},8000)
 
 
 
