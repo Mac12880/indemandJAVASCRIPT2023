@@ -62,13 +62,35 @@
 // }, 3000);
 
 // Set Interval
-const id = setInterval(() => {
-    console.log(Math.random());
-  }, 1000);
-setTimeout(() => {
-  clearTimeout(id)
-},8000)
+// const id = setInterval(() => {
+//     console.log(Math.random());
+//   }, 1000);
+// setTimeout(() => {
+//   clearTimeout(id)
+// },8000)
 
+// Array filter
+// const highGpa = students.filter(student => student.gpa > 90);
+// const lowGpa = students.filter(student => student.gpa <= 90);
+// const lowGpaNames = lowGpa.map(stud => stud.studentName);
 
+//Array.Find
+// const ages = [10, 16, 22, 24, 11];
+// function checkAge(age) {
+//   return age > 18;
+// }
+// function myFunction() {
+//   return ages.find(checkAge);
+// }
+// console.log(myFunction());
+
+//every()
+
+// const words = ["pop", "pip", "log", "poe"];//true
+const words = ["pop", "pip", "log", "calls"];//false
+const test = words.every(word => {
+  return word.length === 3;
+});
+console.log(test);
 
 
