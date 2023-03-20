@@ -140,6 +140,11 @@
 // console.log(copyArr);
 
 //JS map #1
-const array = [6, 7, 8, 9];
-const square = array.map(x => x * x);
-console.log(square)
+// const array = [6, 7, 8, 9];
+// const square = array.map(x => x * x);
+// console.log(square)
+
+//JS map #2
+const array = [2, 5, 100];
+const double = array.map(x => x * 2);
+console.log(double)
