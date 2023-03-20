@@ -131,10 +131,15 @@
 // });
 
 //JS ForEach #2
-let arr = ['element1', 'element2', 'element3'];
-let copyArr = [];
-arr.forEach((array) => {
-  let shift = arr.shift();
-  let push = copyArr.push(shift);
-});
-console.log(copyArr);
+// let arr = ['element1', 'element2', 'element3'];
+// let copyArr = [];
+// arr.forEach((array) => {
+//   let shift = arr.shift();
+//   let push = copyArr.push(shift);
+// });
+// console.log(copyArr);
+
+//JS map #1
+const array = [6, 7, 8, 9];
+const square = array.map(x => x * x);
+console.log(square)
