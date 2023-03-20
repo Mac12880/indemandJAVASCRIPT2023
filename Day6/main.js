@@ -53,7 +53,7 @@
 
 // const isEven = num => num % 2 === 0; // One-liner with Implicit Return
 
-// Set Timeout
+// Set Timeout (delays)
 // setTimeout(() => {
 //   console.log("Hello!");
 //   setTimeout(() => {
@@ -61,7 +61,7 @@
 //   }, 3000);
 // }, 3000);
 
-// Set Interval
+// Set Interval (loop, ends with clearTimeout())
 // const id = setInterval(() => {
 //     console.log(Math.random());
 //   }, 1000);
@@ -74,7 +74,7 @@
 // const lowGpa = students.filter(student => student.gpa <= 90);
 // const lowGpaNames = lowGpa.map(stud => stud.studentName);
 
-//Array.Find
+//Array.Find (gets the first element to satisfy the expression)
 // const ages = [10, 16, 22, 24, 11];
 // function checkAge(age) {
 //   return age > 18;
@@ -84,13 +84,48 @@
 // }
 // console.log(myFunction());
 
-//every()
+//every (only 1 doesn't match == false, all satisfies == true)
+// // const words = ["pop", "pip", "log", "poe"];//true
+// const words = ["pop", "pip", "log", "calls"];//false
+// const test = words.every(word => {
+//   return word.length === 3;
+// });
+// console.log(test);
 
-// const words = ["pop", "pip", "log", "poe"];//true
-const words = ["pop", "pip", "log", "calls"];//false
-const test = words.every(word => {
-  return word.length === 3;
+//some (only 1 satisfies == true, no satisfies == false)
+// // const words = ["pop", "pip", "log", "poe"];//false
+// const words = ["pop", "pip", "log", "calls"];//true
+// const test = words.some(word => {
+//   return word.length >= 4;
+// });
+// console.log(test);
+
+//JS Arrow Function #1
+// const greeter = (name) => {
+//   return `Hello, ${name}!`;
+// }
+// console.log("Test Case 1:")
+// console.log(greeter("AJ"))
+// console.log("Test Case 2:")
+// console.log(greeter("Aldrin"))
+
+//JS Arrow Function #2
+// const arrAverage = (arr) => {
+//   let arrtotal = 0
+//   for(let i = 0; i < arr.length; i++){  
+//     arrtotal = arrtotal + arr[i];
+//   }
+//   return arrtotal/arrAverage.length;
+// }
+// const arr1 = [6, 7, 8, 9, 10];
+// const arr2 = [98, 99, 75, 80];
+// console.log("Test Case 1:")
+// console.log(arrAverage(arr1));
+// console.log("Test Case 2:")
+// console.log(arrAverage(arr2));
+
+//JS ForEach #1
+const array = ['Person1', 'Person2', 'Person3'];
+array.forEach((arr) => {
+console.log(arr);
 });
-console.log(test);
-
-
