@@ -18,3 +18,8 @@ const animes = [
     score: 90
   }
 ];
+
+const bestAnime = animes.reduce((highest, score) => {
+  return (score.score > highest.score) ? score : highest;
+}, animes[0]);
+console.log(bestAnime)
