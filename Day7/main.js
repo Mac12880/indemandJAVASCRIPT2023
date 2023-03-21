@@ -32,8 +32,8 @@
 // console.log(sum(5));
 // console.log(sum(10,10));
 
-// Default Parameter and Spread Operator #1
+// Default Parameter and Spread Operator #2
 const array1 = [1,2];
-const array2 = [3,4,5];
-const spreadArr = [...array1, ...array2];
-console.log(spreadArr);
+let array2 = [3,4,5];
+array2 = [...array1, ...array2];
+console.log(array2);
