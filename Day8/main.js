@@ -2,5 +2,10 @@
 // const elem = document.querySelector("#para").innerHTML = "<elem>Hello, World!</elem>";
 
 // DOM Exercise 2
-const img3 = document.getElementById("img3");
+// const img3 = document.getElementById("img3");
+
+// DOM Exercise 3
+const par = document.querySelector("p").innerHTML = "Hello, World!";
+
+
 
