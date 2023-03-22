@@ -8,8 +8,10 @@
 // const par = document.querySelector("p").innerHTML = "Hello, World!";
 
 // DOM Exercise 4
-const img = document.querySelector("img").src = "JavaScript-logo.png";
+// const img = document.querySelector("img").src = "JavaScript-logo.png";
 
-
-
-
+// DOM Exercise 5
+const h1 = document.querySelector("h1");
+h1.style.color = "yellow";
+h1.style.textAlign = "center";
+h1.style.border = "5px dotted black";
