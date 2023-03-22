@@ -17,7 +17,16 @@
 // h1.style.border = "5px dotted black";
 
 // DOM Exercise 6
-const h1 = document.querySelector("#heading2");
-h1.style.display = "none";
+// const h1 = document.querySelector("#heading2");
+// h1.style.display = "none";
+
+// DOM Exercise 7
+const students = ["Aldrin", "John", "AJ", "Tamayo"];
+const ul = document.querySelector("ul");
+students.forEach((names) => {
+    const li = document.createElement("li");
+    li.textContent = names;
+    ul.appendChild(li);
+});
 
 
