@@ -53,7 +53,7 @@
 // const form = document.querySelector("form");
 // form.onclick = addProductQty;
 
-
+//JS CODE
 const submit = document.querySelector("#submit");
 const ul = document.querySelector("#list")
 

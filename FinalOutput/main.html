@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">    <title>To Do List</title>
 </head>
 <body>
-    <div>
-        <input type="text" id="toDoInput" name="toDo" placeholder="What do you need to do?">
-        <button type="submit" onclick="addTodo()">+
+    <div class="">
+        <input type="text" id="toDoInput" name="toDoInput" placeholder="What do you need to do?">
+        <!-- <input type="submit" id="submit" value="submit"> -->
+        <button type="submit" id="submit" value="submit">+
         <ul id="toDoList" class="toDoList"></ul>
     </div>
+
+    <fieldset>
+        <legend><strong>To Do</strong></legend>
+        <div>
+            <ul id="list"></ul>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend><strong>Completed</strong></legend>
+        <div>
+            <ul id="completedList"></ul>
+        </div>
+    </fieldset>
+
+    
     <script src="main.js"></script>
 </body>
 </html>
