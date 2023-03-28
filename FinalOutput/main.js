@@ -1,5 +1,4 @@
 const submit = document.querySelector("#submit");
-// const ul = document.querySelector("#list");
 const todoListElem = document.querySelector("#list");
 
 
@@ -10,10 +9,7 @@ submit.addEventListener("click", function (event) {
     showTodo();
 });
 
-// const id = [];
-const activeTodoList = [];
-// const completedTodoList = [];
-let count;
+let activeTodoList = [];
 
 function addTodo(){
     let toDo = document.querySelector("#toDoInput");
@@ -93,15 +89,14 @@ todoListElem.addEventListener('click', (event) =>{
     // console.log(todoId, action);//check the action
 
     action === "check" && checkTodo(todoId);
-    // action === "delete" && deleteTodo(todoId);
+    action === "delete" && deleteTodo(todoId);
 
     
 });
 
 //Check a todo
-
 function checkTodo(todoId){
-    let newArr = activeTodoList.map((todo, index) => {
+    activeTodoList = activeTodoList.map((todo, index) => {
         if(index === todoId){
             return {
                 value : todo.value,
@@ -115,6 +110,16 @@ function checkTodo(todoId){
             }
         }
     });
+    //show again because we changed the array
+    showTodo();
+}
+
+//Delete a todo
+function deleteTodo(todoId){
+    activeTodoList = activeTodoList.filter((todo, index) => index !== todoId);
+
+    //show again because we changed the array
+    showTodo();
 }
 
 

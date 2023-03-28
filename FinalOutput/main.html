@@ -10,42 +10,44 @@
     <title>To Do List</title>
 </head>
 <body>
-    <div class="inputForm">
-        <input type="text" id="toDoInput" name="toDoInput" placeholder="What do you need to do?">
-        <!-- <input type="submit" id="submit" value="submit"> -->
-        <!-- <button type="submit" id="submit" value="submit"></button> -->
-        <a id="submit" value="submit"><i class="bi bi-plus-circle-fill"></i></a>
-        
-        <!-- <ul id="toDoList" class="toDoList"></ul> -->
-    </div>
-
-    <fieldset class="listContainer">
-        <legend><strong>To Do List</strong></legend>
-        <div id="list">
-            <!-- <div class="toDo" id="0">
-                <table>
-                    <tr>
-                        <td class="left">
-                            <a><i class="bi bi-circle"></i></a>
-                            <a><i class="bi bi-check-circle"></i></a>
-                            <p style="display: inline-block;">Take a bath</p>
-                        </td>
-                        <td class="right">
-                            <a><i class="bi bi-trash3-fill"></i></a>
-                        </td>
-                    </tr>
-                </table>
-            </div> -->
-        </div>
-    </fieldset>
-
-    <!-- <fieldset>
-        <legend><strong>Completed</strong></legend>
+    <section>
         <div>
-            <ul id="completedList"></ul>
+            <h3 style="text-align: center;">Hi___!
+            <br> This is your to do list!</h3>
         </div>
-    </fieldset> -->
 
+        <div class="inputForm" >
+            
+            <label for="toDoInput">To Do:</label>
+            <input type="text" id="toDoInput" name="toDoInput" placeholder="What do you need to do?">
+            <!-- <input type="submit" id="submit" value="submit"> -->
+            <!-- <button type="submit" id="submit" value="submit"></button> -->
+            <a id="submit" value="submit"><i class="bi bi-plus-circle-fill"></i></a>
+            
+        </div>
+    </section>
+    
+    <section>
+        <fieldset class="listContainer">
+            <legend><strong>To Do List</strong></legend>
+            <div id="list">
+                <!-- <div class="toDo" id="0">
+                    <table>
+                        <tr>
+                            <td class="left">
+                                <a><i class="bi bi-circle"></i></a>
+                                <a><i class="bi bi-check-circle"></i></a>
+                                <p style="display: inline-block;">Take a bath</p>
+                            </td>
+                            <td class="right">
+                                <a><i class="bi bi-trash3-fill"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div> -->
+            </div>
+        </fieldset>
+    </section>
     
     <script src="main.js"></script>
 </body>
