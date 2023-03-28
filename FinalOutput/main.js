@@ -86,7 +86,7 @@ todoListElem.addEventListener('click', (event) =>{
     // console.log(parentElem)//show the GreatGreatGreatGrandParent node
     const todo = parentElem;
     const todoId = Number(todo.id);
-    console.log(todoId);//show id
+    // console.log(todoId);//show id
     
     //target action
     const action = target.dataset.action
@@ -100,20 +100,21 @@ todoListElem.addEventListener('click', (event) =>{
 
 //Check a todo
 
-function checkTodo(){
-    activeTodoList.map
+function checkTodo(todoId){
+    let newArr = activeTodoList.map((todo, index) => {
+        if(index === todoId){
+            return {
+                value : todo.value,
+                checked : !todo.checked
+            }
+        }
+        else{
+            return {
+                value : todo.value,
+                checked : todo.checked
+            }
+        }
+    });
 }
-
-// activeTodoList.forEach((element) => {
-//     console.log(`Element in active array: ${element}`)
-
-// });
-
-// activeTodoList.forEach(checkActiveTodo);
-
-
-// function checkActiveTodo(item){
-//     console.log("Test")
-// }
 
 
