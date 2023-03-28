@@ -50,14 +50,14 @@ function showTodo(){
             <table>
                 <tr>
                     <td class="left">
-                        <a><i class="bi ${todo.checked ? 'bi-check-circle' : 'bi-circle'}"
+                        <a><i class="bi check ${todo.checked ? 'bi-check-circle' : 'bi-circle'}"
                         data-action="check">
                         
                         </i></a>
                         <p style="display: inline-block;" data-action="check">${todo.checked ? '<s>' : ''}${todo.value}${todo.checked ? '</s>' : ''}</p>
                     </td>
                     <td class="right">
-                        <a><i class="bi bi-trash3-fill" data-action="delete"></i></a>
+                        <a><i class="bi  delete bi-trash3-fill" data-action="delete"></i></a>
                     </td>
                 </tr>
             </table>
