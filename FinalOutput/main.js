@@ -54,7 +54,7 @@ function showTodo(){
                         data-action="check">
                         
                         </i></a>
-                        <p style="display: inline-block;" data-action="check">${todo.value}</p>
+                        <p style="display: inline-block;" data-action="check">${todo.checked ? '<s>' : ''}${todo.value}${todo.checked ? '</s>' : ''}</p>
                     </td>
                     <td class="right">
                         <a><i class="bi bi-trash3-fill" data-action="delete"></i></a>

@@ -2,14 +2,23 @@
 .inputForm{
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-style: none;
     text-align: center;
-    max-width: 400px;
+    border-width: thin;
+    max-width: 300px;
+}
+.inputForm b{
+    font-size: 15px;
+    padding-right: 20px;
 }
 
-/*  */
+.inputForm input{
+    width: 50px;
+    font-size: 10px;
+}
+/*  Show To Do*/
 
 
 fieldset{
@@ -17,11 +26,12 @@ fieldset{
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
-    border-style: solid;
+    border-style: dotted;
+    border-color: black;
 }
 .toDo p{
-    padding-left: 10px;
-    padding-right: 40px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     margin: 10px 0px 10px 0px;
 }
 
@@ -31,7 +41,10 @@ fieldset{
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 5px;
+    border-width: thin;
 }
+
+
 .right p{
     align-items: right;
     text-align: right;
