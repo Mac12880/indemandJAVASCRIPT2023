@@ -1,3 +1,80 @@
+/* Landing Page */
+body{
+    background: rgb(0,70,130);
+    background: radial-gradient(circle, rgba(0,70,130,1) 0%, rgba(3,112,183,1) 25%, rgba(2,149,206,1) 50%, rgba(7,209,143,1) 75%, rgba(96,244,160,1) 100%);
+}
+.landingPage b{
+    font-family: Verdana,Geneva,sans-serif;
+    color: white;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.landingPage .container{
+    background-color: black;
+    border-style: solid;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.landingPage .parag{
+    font-size: 6px;
+    background-color: black;
+}
+.landingPage .clickMe{
+    font-size: 6px;
+    background-color: black;
+    transition: transform .2s;
+}
+.landingPage .clickMe a{
+    text-decoration: none;
+}
+.landingPage .clickMe:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .2s;
+}
+.landingPage .secContainer{
+    background-color: black;
+    border-style: solid;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.landingPage .container h3, .landingPage .container h6{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.landingPage .secContainer hr{
+    color: white;
+    padding: 0;
+    margin: 0;
+
+}
+.landingPage .mainBody{
+    font-size: 10px;
+}
+.landingPage .insideBody{
+    font-size: 5px;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Activate To Do */
+#activateToDo{
+    display: none;
+}
+
 /* Input */
 body{
     background: rgb(0,70,130);

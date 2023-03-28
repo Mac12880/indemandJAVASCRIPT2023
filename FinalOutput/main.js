@@ -1,6 +1,30 @@
 const submit = document.querySelector("#submit");
 const todoListElem = document.querySelector("#list");
+const clickToDo = document.querySelector("#clickMe");
+const activateToDo = document.querySelector("#activateToDo");
+let getname;
 
+clickToDo.addEventListener("click", clToDo);
+    
+function clToDo(){
+    getname = prompt("Enter your name!");
+    if(getname == "" || getname == null || getname.length <= 1){
+        alert("Input a valid name!");
+    }
+    else{
+        const greetname = document.querySelector("#greeting");
+        greetname.appendChild(document.createTextNode(`Hi ${getname}!`));
+        document.body.appendChild(greetname);
+        console.log(getname);
+        location.href = "#greeting";
+        setTimeout(showTodoSection, 3000);
+    }
+    function showTodoSection(){
+        activateToDo.style.display = "block";
+        location.href = "#list";
+    }
+        
+}
 
 
 submit.addEventListener("click", function (event) {
