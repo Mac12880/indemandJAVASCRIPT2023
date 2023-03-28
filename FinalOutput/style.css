@@ -1,3 +1,32 @@
-#toDoInput{
-    
+fieldset{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    border-style: dotted;
+}
+.toDo p{
+    padding-left: 10px;
+    padding-right: 40px;
+    margin: 10px 0px 10px 0px;
+}
+
+.toDo{
+    border-style: solid;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+}
+.right p{
+    align-items: right;
+    text-align: right;
+    float: right;
+}
+
+.toDo .left{
+    width: 100%;
+}
+.toDo .right{
+    width: 30%;
 }
