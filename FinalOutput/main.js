@@ -2,33 +2,72 @@ const submit = document.querySelector("#submit");
 const todoListElem = document.querySelector("#list");
 const clickToDo = document.querySelector("#clickMe");
 const activateToDo = document.querySelector("#activateToDo");
-let getname;
+let getname = document.querySelector("#getName");
+const submitbtn = document.querySelector("#submitBtn");
+// Button to go to the top
+// Get the button
+let mybutton = document.getElementById("myBtnToTop");
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
-// Get
-window.addEventListener('message', event => {
-    // Retrieve the variable from the parent window
-    const yourName = event.data;
-    console.log(yourName); // Output: 'Hello, world!'
-  });
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
 
-
-
-
-
-
-// clickToDo.addEventListener("click", clToDo);
-// $(document).on('click', '.btn', function() {
-
-//     var name = $(this).data('username');        
-//     if (name) {
-//         window.location = '/player_detail?username=' + name;
-//     }
-// });​
-
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 
 
 
+
+
+//Click Me to Input Name
+clickToDo.addEventListener("click", function (event) {
+    getname.style.display = "block";
+    getname.scrollIntoView()
+});
+
+
+//Input Name to To Do List
+submitbtn.addEventListener("click", function (event) {
+    const inName = document.querySelector("#inputName");
+    if(inName.value == null || inName.value == undefined || inName.value.length <= 1){
+        inName.value = "";
+        alert("Input a valid name!");
+    }
+    else{
+        const greet = `Hi ${inName.value},`;
+        document.getElementById("greeting").textContent = greet;
+        activateToDo.style.display = "block";
+        activateToDo.scrollIntoView()
+        inName.value = "";
+        getname.style.display = "none";
+    }
+    
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//To do List
 submit.addEventListener("click", function (event) {
     event.preventDefault();
     addTodo();

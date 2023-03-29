@@ -10,31 +10,56 @@
     <title>To Do List</title>
 </head>
 <body>
-    <!-- <section class="landingPage">
+    <div class="toTop">
+        <a onclick="topFunction()" id="myBtnToTop" title="Go to top" class="bi bi-arrow-up"></a>
+    </div>
+
+    <section class="landingPage">
         <section class="container">
             <div class="intro">
                 <h3><b>To Do List</b></h3>
                 <h6><b>Why use a to do list?<b></h6>
                 <button class="clickMe"><a href="#secContainer"><b>Click Me</b></a></button>
-                <p class="parag">to know more</p>
-                <button class="clickMe" id="clickMe"><b>Click me</b></button>
-                <p class="parag">to use a To Do List</p>
+                <p class="parag">to know more,</p>
+                <button class="clickMe" id="clickMe"><a href="#activateToDo"><b>Click me</b></a></button>
+                <p class="parag">to use a To Do List.</p>
             </div>
         </section>
         <br>
         <div class="secContainer" id="secContainer">
             <b class="mainBody">Productivity</b>
             <hr>
-            <p class="insideBody">By recording all of your tasks in a to-do list, you can conveniently review the list and prioritize the most critical tasks. This prevents wasting time on trivial activities when there are more pressing matters that require attention. According to a study conducted by the Harvard Business Review, poor time management caused 90% of managers to waste valuable time. A to-do list helps you stay focused on the most important task at hand.
+            <p class="insideBody">By recording all of your tasks in a to-do list, you can conveniently 
+                review the list and prioritize the most critical tasks. This prevents wasting time on 
+                trivial activities when there are more pressing matters that require attention. 
+                According to a study conducted by the Harvard Business Review, poor time management 
+                caused 90% of managers to waste valuable time. A to-do list helps you stay focused on 
+                the most important task at hand.
 
-                Using a to-do list can enhance your productivity by prioritizing your focus and avoiding unimportant distractions. Various distractions can easily divert our attention, leading to mental distractions and inefficiency. How many times have you found yourself doing one thing while worrying about the next or what you may have forgotten? With a well-organized to-do list at your disposal, you can stay focused on the current activity, enjoy life more, and be more productive. A to-do list can help prevent mental distractions and put your mind at ease, knowing that you won't forget anything.</p>
+                Using a to-do list can enhance your productivity by prioritizing your focus and 
+                avoiding unimportant distractions. Various distractions can easily divert our 
+                attention, leading to mental distractions and inefficiency. How many times have you 
+                found yourself doing one thing while worrying about the next or what you may have 
+                forgotten? With a well-organized to-do list at your disposal, you can stay focused on 
+                the current activity, enjoy life more, and be more productive. A to-do list can help 
+                prevent mental distractions and put your mind at ease, knowing that you won't forget 
+                anything.</p>
             <b class="mainBody">Organization</b>
             <hr>
-            <p class="insideBody">One of the primary benefits of maintaining a to-do list is the sense of organization it provides. Organizing your tasks using a list can make everything seem more manageable and keep you grounded. When you have a clear overview of all your completed and uncompleted tasks, it will help you feel organized and maintain mental focus.
+            <p class="insideBody">One of the primary benefits of maintaining a to-do list is the sense 
+                of organization it provides. Organizing your tasks using a list can make everything 
+                seem more manageable and keep you grounded. When you have a clear overview of all your 
+                completed and uncompleted tasks, it will help you feel organized and maintain mental 
+                focus.
 
-                As you check off tasks on your to-do list, you'll experience a sense of progress and accomplishment that can be lost when rushing from one activity to the next. This affirmation of progress can help motivate you to continue moving forward instead of feeling overwhelmed.
+                As you check off tasks on your to-do list, you'll experience a sense of progress and 
+                accomplishment that can be lost when rushing from one activity to the next. This 
+                affirmation of progress can help motivate you to continue moving forward instead of 
+                feeling overwhelmed.
                 
-                By having a list of all your tasks, you can sit down and create a plan. According to research, spending just fifteen minutes planning can save you an hour of execution time!</p>
+                By having a list of all your tasks, you can sit down and create a plan. According to 
+                research, spending just fifteen minutes planning can save you an hour of execution 
+                time!</p>
             <b class="mainBody">Motivation</b>
             <hr>
             <p class="insideBody">Most motivational speakers is telling you to use a to do list 
@@ -49,38 +74,43 @@
                 had!</p>
             <b class="mainBody">Improved Memory</b>
             <hr>
-            <p class="insideBody">Are you struggling to remember everything you need to do? It's perfectly normal to forget things as our brains can't hold on to every piece of information all the time. Luckily, to-do lists can serve as an external memory aid that allows you to forget without losing important tasks. As long as you remember to check your list, you'll have all your recorded tasks in one place.
+            <p class="insideBody">Are you struggling to remember everything you need to do? It's 
+                perfectly normal to forget things as our brains can't hold on to every piece of 
+                information all the time. Luckily, to-do lists can serve as an external memory aid 
+                that allows you to forget without losing important tasks. As long as you remember to 
+                check your list, you'll have all your recorded tasks in one place.
 
-                By using a to-do list, you can provide your brain with an external storage for information, which can be particularly helpful when you have a lot of tasks to remember. Our short-term memory has limitations, and can only hold around 7 pieces of information for about 30 seconds. If you have more tasks than that, it's easy to forget something important. However, with a to-do list, you can keep track of everything effortlessly.
+                By using a to-do list, you can provide your brain with an external storage for 
+                information, which can be particularly helpful when you have a lot of tasks to 
+                remember. Our short-term memory has limitations, and can only hold around 7 pieces of 
+                information for about 30 seconds. If you have more tasks than that, it's easy to forget 
+                something important. However, with a to-do list, you can keep track of everything 
+                effortlessly.
                 
-                Furthermore, using a to-do list can help reinforce your memory retention skills. Every time you refer to your list, it strengthens the information in your short-term memory, reducing the likelihood of forgetting important appointments or commitments. Students often use lists as study aids to improve memory retention of important facts.</p>
+                Furthermore, using a to-do list can help reinforce your memory retention skills. Every 
+                time you refer to your list, it strengthens the information in your short-term memory, 
+                reducing the likelihood of forgetting important appointments or commitments. Students 
+                often use lists as study aids to improve memory retention of important facts.</p>
         </div> 
-    </section> -->
+        <br>
+        <section class="getName" id="getName">
+            <b class="insideBody">Input Name</b>
+            <br>
+            <input id="inputName"></input>
+            <br>
+            <input type="button" class="submitBtn" name="submitBtn" value="Send" id="submitBtn"/>
+        </section>
 
+        <section>
+            
+        </section>
+    </section>
+
+    <br>
+    <br>
 
     <section class="activateToDoList" id="activateToDo">
         <br>
-        <!-- <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br> -->
         <section>
             <div class="intro">
                 <h3 style="text-align: center;" id="greeting"></h3>
@@ -89,12 +119,9 @@
             </div>
 
             <div class="inputForm" >
-                
                 <!-- <b>To Do</b> -->
                 <!-- <br> -->
                 <input type="text" id="toDoInput" name="toDoInput" placeholder="ADD TO DO">
-                <!-- <input type="submit" id="submit" value="submit"> -->
-                <!-- <button type="submit" id="submit" value="submit"></button> -->
                 <a id="submit" value="submit"><button type="submit" class="bi bi-plus-circle-fill addbtn"></button></a>
                 
             </div>
@@ -104,20 +131,6 @@
             <fieldset class="listContainer">
                 <legend><strong>To Do List</strong></legend>
                 <div id="list">
-                    <!-- <div class="toDo" id="0">
-                        <table>
-                            <tr>
-                                <td class="left">
-                                    <a><i class="bi bi-circle"></i></a>
-                                    <a><i class="bi bi-check-circle"></i></a>
-                                    <p style="display: inline-block;">Take a bath</p>
-                                </td>
-                                <td class="right">
-                                    <a><i class="bi bi-trash3-fill"></i></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div> -->
                 </div>
             </fieldset>
         </section>
