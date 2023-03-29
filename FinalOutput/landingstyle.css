@@ -1,3 +1,24 @@
+/* Button to top */
+#myBtnToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtnToTop:hover {
+    background-color: #555;
+  }
+/* Landing Page */
 body{
     background: rgb(0,70,130);
     background: radial-gradient(circle, rgba(0,70,130,1) 0%, rgba(3,112,183,1) 25%, rgba(2,149,206,1) 50%, rgba(7,209,143,1) 75%, rgba(96,244,160,1) 100%);
@@ -19,8 +40,22 @@ body{
     margin-right: auto;
     text-align: center;
 }
+.landingPage .parag{
+    font-size: 6px;
+    background-color: black;
+}
 .landingPage .clickMe{
     font-size: 6px;
+    background-color: #303030;
+    transition: transform .2s;
+}
+.landingPage .clickMe a{
+    text-decoration: none;
+}
+.landingPage .clickMe:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: transform .2s;
 }
 .landingPage .secContainer{
     background-color: black;
