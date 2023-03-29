@@ -28,22 +28,61 @@ function topFunction() {
 
 clickToDo.addEventListener("click", clToDo);
     
-function clToDo(){
-    getname = prompt("Enter your name!");
-    if(getname == "" || getname == null || getname.length <= 1){
-        alert("Input a valid name!");
-    }
-    else{
-        const greetname = document.querySelector("#greeting");
-        greetname.appendChild(document.createTextNode(`Hi ${getname}!`));
-        document.body.appendChild(greetname);
-        console.log(getname);
-        location.href = "#greeting";
-        setTimeout(showTodoSection, 3000);
-    }
-    function showTodoSection(){
-        activateToDo.style.display = "block";
-        location.href = "#list";
-    }
+// function clToDo(){
+//     getname = prompt("Enter your name!");
+//     if(getname == "" || getname == null || getname.length <= 1){
+//         alert("Input a valid name!");
+//     }
+//     else{
+//         const greetname = document.querySelector("#greeting");
+//         greetname.appendChild(document.createTextNode(`Hi ${getname}!`));
+//         document.body.appendChild(greetname);
+//         console.log(getname);
+//         location.href = "#greeting";
+//         setTimeout(showTodoSection, 3000);
+//     }
+//     function showTodoSection(){
+//         activateToDo.style.display = "block";
+//         location.href = "#list";
+//     }
         
+// }
+
+const submitName = document.querySelector(".submitBtn");
+clickToDo.addEventListener("click", subName);
+    
+function subName(){
+    const getName = document.querySelector("#inputName");
+
+        // For passing data
+        const yourName = getName.value;
+        const childWindow = window.open('main.html');
+
+        // Wait for the child window to load
+        childWindow.onload = () => {
+        // Pass the variable to the child window
+        childWindow.postMessage(yourName, '*');
+    };
 }
+
+
+
+// function clToDo(){
+//     getname = prompt("Enter your name!");
+//     if(getname == "" || getname == null || getname.length <= 1){
+//         alert("Input a valid name!");
+//     }
+//     else{
+//         const greetname = document.querySelector("#greeting");
+//         greetname.appendChild(document.createTextNode(`Hi ${getname}!`));
+//         document.body.appendChild(greetname);
+//         console.log(getname);
+//         location.href = "#greeting";
+//         setTimeout(showTodoSection, 3000);
+//     }
+//     function showTodoSection(){
+//         activateToDo.style.display = "block";
+//         location.href = "#list";
+//     }
+        
+// }
